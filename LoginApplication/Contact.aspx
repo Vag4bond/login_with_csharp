@@ -8,6 +8,7 @@
         Redmond, WA 98052-6399<br />
         <abbr title="Phone">P:</abbr>
         425.555.0100
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     </address>
 
     <address>
