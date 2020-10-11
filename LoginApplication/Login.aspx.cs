@@ -51,6 +51,7 @@ namespace LoginApplication
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         protected void Button2_Click(object sender, EventArgs e)
         {
@@ -58,5 +59,7 @@ namespace LoginApplication
         }
 =======
 >>>>>>> cdad350... New working project by Leiscar
+=======
+>>>>>>> cdad350de922c2dc1de3ee5ee23e74969f7578b1
     }
     }

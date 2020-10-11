@@ -71,6 +71,7 @@ namespace LoginApplication
         /// <summary>
         /// txtCedula control.
 <<<<<<< HEAD:LoginApplication/Register.aspx.designer.cs
+<<<<<<< HEAD:LoginApplication/Register.aspx.designer.cs
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -100,6 +101,8 @@ namespace LoginApplication
         /// txtMobileNumber control.
 =======
 >>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx.designer.cs
+=======
+>>>>>>> cdad350de922c2dc1de3ee5ee23e74969f7578b1:LoginWithCSharp/Register.aspx.designer.cs
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
