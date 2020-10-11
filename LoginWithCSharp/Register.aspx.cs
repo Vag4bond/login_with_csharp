@@ -46,6 +46,7 @@ namespace LoginWithCSharp
             txtEmail.Text = "";
             txtUser.Focus();
 
+            Response.Redirect("Login.aspx");
         }
     }
 }
