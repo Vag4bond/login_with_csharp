@@ -71,9 +71,15 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style13">
+<<<<<<< HEAD:LoginApplication/Register.aspx
                         </td>
                     <td class="auto-style14">
                       Username
+=======
+                        Username</td>
+                    <td class="auto-style14">
+                        <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
 
                     <td class="auto-style15"><asp:TextBox ID="txtUser" runat="server" Width="127px"></asp:TextBox></td>
@@ -81,7 +87,11 @@
                 </tr>
                 <tr>
                     <td class="auto-style13">
+<<<<<<< HEAD:LoginApplication/Register.aspx
                         
+=======
+                        <asp:Label ID="Label1" runat="server" Text="First Name"></asp:Label>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
                     <td class="auto-style14">
                         <asp:Label ID="Label1" runat="server" Text="First Name"></asp:Label>
@@ -90,18 +100,30 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
+<<<<<<< HEAD:LoginApplication/Register.aspx
                         
+=======
+                        <asp:Label ID="Label2" runat="server" Text="Last Name"></asp:Label>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
                     <td class="auto-style6">
                         <asp:Label ID="Label2" runat="server" Text="Last Name"></asp:Label>
                         
                     </td>
+<<<<<<< HEAD:LoginApplication/Register.aspx
                     <td class="auto-style4"><asp:TextBox ID="txtLastName" runat="server"></asp:TextBox></td>
+=======
+                    <td class="auto-style4"></td>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                 </tr>
               
                 <tr>
                     <td class="auto-style3">
+<<<<<<< HEAD:LoginApplication/Register.aspx
                         </td>
+=======
+                        Cedula</td>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     <td class="auto-style6">
                         Cedula
                         
@@ -121,8 +143,13 @@
                 </tr>  
               
                 <tr>
+<<<<<<< HEAD:LoginApplication/Register.aspx
                     <td class="auto-style18">
                         
+=======
+                    <td class="auto-style2">
+                        <asp:Label ID="Label4" runat="server" Text="Mobile Number"></asp:Label>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
                     <td class="auto-style5">
                         <asp:Label ID="Label4" runat="server" Text="Mobile Number"></asp:Label>
@@ -157,8 +184,13 @@
                     </td>
                 </tr>  
                 <tr>
+<<<<<<< HEAD:LoginApplication/Register.aspx
                     <td class="auto-style18">
                         
+=======
+                    <td class="auto-style2">
+                        <asp:Label ID="Label5" runat="server" Text="Password"></asp:Label>
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
                     <td class="auto-style5">
                         <asp:Label ID="Label5" runat="server" Text="Password"></asp:Label>
@@ -173,9 +205,15 @@
                     <td class="auto-style9"></td>
                 </tr>
                 <tr>
+<<<<<<< HEAD:LoginApplication/Register.aspx
                     <td class="auto-style18"&nbsp;</td>
                     <td class="auto-style5">
                        
+=======
+                    <td class="auto-style2"&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Button ID="Button1" runat="server" Text="Register/Sign Up" OnClick="Button1_Click" />
+>>>>>>> cdad350... New working project by Leiscar:LoginWithCSharp/Register.aspx
                     </td>
                     <td> <asp:Button ID="Button1" runat="server" Text="Registrate" OnClick="Button1_Click" />&nbsp;</td>
                 </tr>

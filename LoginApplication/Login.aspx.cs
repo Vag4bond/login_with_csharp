@@ -50,10 +50,13 @@ namespace LoginApplication
                 Response.Write(ex.Message);
             }
         }
+<<<<<<< HEAD
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("Register.aspx");
         }
+=======
+>>>>>>> cdad350... New working project by Leiscar
     }
     }
