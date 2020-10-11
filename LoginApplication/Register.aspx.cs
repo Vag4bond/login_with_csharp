@@ -20,13 +20,16 @@ namespace LoginApplication
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into RegistrationTable values (@Username, @FirstName, @LastName, @Cedula, @MobileNumber, @Password)", con);
+            SqlCommand cmd = new SqlCommand("insert into RegistrationTable values (@Username, @FirstName, @LastName, @Cedula, @MobileNumber, @Password, @Email, @Genero, @Ciudad)", con);
             cmd.Parameters.AddWithValue("Username", txtUser.Text);
             cmd.Parameters.AddWithValue("FirstName", txtFirstName.Text);
             cmd.Parameters.AddWithValue("LastName", txtLastName.Text);
             cmd.Parameters.AddWithValue("Cedula", txtCedula.Text);
             cmd.Parameters.AddWithValue("MobileNumber", txtMobileNumber.Text);
             cmd.Parameters.AddWithValue("Password", txtPassword.Text);
+            cmd.Parameters.AddWithValue("Email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("Genero", Convert.ToString(RadioButtonList1.SelectedValue));
+            cmd.Parameters.AddWithValue("Ciudad", Convert.ToString(DropDownList1.SelectedValue));
             cmd.ExecuteNonQuery();
          
             txtUser.Text = "";
@@ -35,6 +38,10 @@ namespace LoginApplication
             txtCedula.Text = "";
             txtMobileNumber.Text = "";
             txtPassword.Text = "";
+            txtEmail.Text = "";
+            RadioButtonList1.SelectedValue = "";
+            DropDownList1.SelectedValue = "";
+
             txtUser.Focus();
 
 
