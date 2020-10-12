@@ -17,7 +17,7 @@ namespace LoginWithCSharp
 
         }
 
-        protected void Button1_Click1(object sender, EventArgs e)
+        protected void Button_1_Click1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
             con.Open();

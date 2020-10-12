@@ -2,178 +2,331 @@
 
 <!DOCTYPE html>
 
-<script runat="server">
-</script>
-<head runat="server">
-    <title></title>
-    
-<style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 355px;
-        }
-        .auto-style3 {
-            width: 355px;
-            height: 24px;
-        }
-        .auto-style4 {
-            height: 24px;
-        }
-        .auto-style5 {
-            width: 338px;
-        }
-        .auto-style6 {
-            width: 338px;
-            height: 24px;
-        }
-        .auto-style7 {
-            width: 355px;
-            height: 23px;
-        }
-        .auto-style8 {
-            width: 338px;
-            height: 23px;
-        }
-        .auto-style9 {
-            height: 23px;
-        }
-        .auto-style10 {
-            width: 355px;
-            height: 32px;
-        }
-        .auto-style11 {
-            width: 338px;
-            height: 32px;
-        }
-        .auto-style12 {
-            height: 32px;
-        }
-        .auto-style13 {
-            width: 355px;
-            height: 26px;
-        }
-        .auto-style14 {
-            width: 338px;
-            height: 26px;
-        }
-        .auto-style15 {
-            height: 26px;
-        }
-    </style>
-</head>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<body>
-    <form id="form1" runat="server">
-        <div>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="inactive underlineHover"> Sign In </h2>
+    <h2 class="active">Sign Up</h2>
 
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style10">
-                        &nbsp;</td>
-                    <td class="auto-style11"></td>
-                    <td class="auto-style12"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style13">
-                        <asp:Label ID="Label" runat="server" Text="Nombre de Usuario"></asp:Label>
-                    <td class="auto-style14">
-                        <asp:TextBox ID="txtUser" runat="server" ></asp:TextBox>
-                    </td>
-                    <td class="auto-style15"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style13">
-                        <asp:Label ID="Label1" runat="server" Text="Primer Nombre"></asp:Label>
-                    </td>
-                    <td class="auto-style14">
-                        <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style15"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Label2" runat="server" Text="Apellidos"></asp:Label>
-                    </td>
-                    <td class="auto-style6">
-                        <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
-                    </td>
-                    </tr>
-                    <tr>  
-                    <td>Ciudad</td>  
-                    <td>  
-                        <asp:DropDownList ID="DropDownList1" runat="server">  
-                            <asp:ListItem Text="Seleccione una ciudad" Value="select" Selected="True"></asp:ListItem>  
-                            <asp:ListItem Text="Santo Domingo" Value="SantoDomingo"></asp:ListItem>  
-                            <asp:ListItem Text="Santiago" Value="Santiago"></asp:ListItem>  
-                            <asp:ListItem Text="San Cristóbal" Value="SanCristobal"></asp:ListItem>  
-                        </asp:DropDownList>  
-                    </td>  
-                </tr>  
-                <tr>  
-                    <td>Genero</td>  
-                    <td>  
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">  
-                            <asp:ListItem>Masculino</asp:ListItem>  
-                            <asp:ListItem>Femenino</asp:ListItem>  
-                        </asp:RadioButtonList>  
-                    </td>  
-               </tr>
-                <tr>  
-                    <td>Email</td>  
-                    <td>  
-                        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>  
-                    </td>  
-                </tr>  
-                  <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Labe2" runat="server" Text="Cedula"></asp:Label>
-                    <td class="auto-style6">
-                        <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style4">&nbsp;</td>
-                </tr>
-              
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Label ID="Label4" runat="server" Text="Numero de Telefono"></asp:Label>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtMobileNumber" runat="server"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Label ID="Label5" runat="server" Text="Contraseña"></asp:Label>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-             
-                <tr>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
-                </tr>
-                <tr>
-                    <td> &nbsp;</td>
-                    <td class="auto-style5">
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Registrate" />
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://pngimage.net/wp-content/uploads/2018/06/icono-nuevo-registro-png-4.png"
 
-        </div>
+    <!-- Login Form class="auto-style1" -->
+    <form ID="login" runat="server"> 
+        <asp:TextBox ID="txtUser" runat="server" type="text" class="fadeIn second" name="login" placeholder="Nombre de Usuario"></asp:TextBox>
+        <asp:TextBox ID="txtFirstName" runat="server" input type="text" class="fadeIn third" name="login" placeholder="Primer Nombre"></asp:TextBox>
+        <asp:TextBox ID="txtLastName" runat="server" type="text" class="fadeIn second" name="login" placeholder="Apellidos"></asp:TextBox>
+        <asp:TextBox ID="txtEmail" runat="server" type="text" class="fadeIn second" name="login" placeholder="Email"></asp:TextBox>
+        <asp:TextBox ID="txtCedula" runat="server" type="text" class="fadeIn second" name="login" placeholder="Cedula"></asp:TextBox>
+        <asp:TextBox ID="txtMobileNumber" runat="server" type="text" class="fadeIn second" name="login" placeholder="Numero de Telefono"></asp:TextBox>
+        <asp:TextBox ID="txtPassword" runat="server" type="text" class="fadeIn second" name="login" placeholder="Contraseña"></asp:TextBox> 
+        <asp:DropDownList placeholder="Ciudad" ID="DropDownList1" runat="server" name="login"> 
+        <asp:ListItem Text="Seleccione una ciudad" Value="select" Selected="True"></asp:ListItem>  
+        <asp:ListItem Text="Santo Domingo" Value="SantoDomingo"></asp:ListItem>  
+        <asp:ListItem Text="Santiago" Value="Santiago"></asp:ListItem>  
+        <asp:ListItem Text="San Cristóbal" Value="SanCristobal"></asp:ListItem>  
+        </asp:DropDownList>  
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="radioButtonList"  RepeatDirection="Horizontal" TextAlign="Right" Style="list-style=center" align="center">  
+               <asp:ListItem>Masculino</asp:ListItem>  
+               <asp:ListItem>Femenino</asp:ListItem>  
+               </asp:RadioButtonList>  
+
+        <asp:Button ID="Button1" name="Login" runat="server" input type="submit" class="fadeIn fourth" Text="Registrate" OnClick="Button_1_Click1"></asp:Button>      
+
     </form>
-</body>
-</html>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* BASIC */
+
+.radioButtonList input[type="radio"] {
+   width: auto;      
+   float: left;  
+}
+
+.radioButtonList label {      
+   width: auto;      
+   display: inline;      
+   float: left;      
+   font-size: 0.95rem;      
+   color: #000000 !important;        
+}
+
+html {
+  background-color: #015380;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+    .auto-style1 {
+        width: 48px;
+        height: 47px;
+    }
+</style>
