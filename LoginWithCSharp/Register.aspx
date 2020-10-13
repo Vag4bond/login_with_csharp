@@ -20,8 +20,8 @@
         <asp:TextBox ID="txtEmail" runat="server" type="text" class="fadeIn second" name="login" placeholder="Email"></asp:TextBox>
         <asp:TextBox ID="txtCedula" runat="server" type="text" class="fadeIn second" name="login" placeholder="Cedula"></asp:TextBox>
         <asp:TextBox ID="txtMobileNumber" runat="server" type="text" class="fadeIn second" name="login" placeholder="Numero de Telefono"></asp:TextBox>
-        <asp:TextBox ID="txtPassword" runat="server" type="text" class="fadeIn second" name="login" placeholder="Contraseña"></asp:TextBox> 
-        <asp:DropDownList placeholder="Ciudad" ID="DropDownList1" runat="server" name="login"> 
+        <asp:TextBox ID="txtPassword" runat="server" input type="password" class="fadeIn second" name="login" placeholder="Contraseña" CssClass=""></asp:TextBox> 
+        <asp:DropDownList placeholder="Ciudad" ID="DropDownList1" runat="server" name="login" CssClass="DropDownList1"> 
         <asp:ListItem Text="Seleccione una ciudad" Value="select" Selected="True"></asp:ListItem>  
         <asp:ListItem Text="Santo Domingo" Value="Santo Domingo"></asp:ListItem>  
         <asp:ListItem Text="Santiago" Value="Santiago"></asp:ListItem>  
@@ -125,6 +125,15 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
+.DropDownList1
+{
+color: #f6f6f6;
+font-size: 13px;
+padding: 5px 10px;
+border-radius: 5px;
+background-color: #56baed;
+font-weight: bold;
+}
 
 
 /* TABS */
@@ -202,11 +211,40 @@ input[type=text]:focus {
   border-bottom: 2px solid #5fbae9;
 }
 
+
 input[type=text]:placeholder {
   color: #cccccc;
 }
 
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
 
+input[type=password]:focus{
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=password]:placeholder{
+  color: #cccccc;
+}
 
 /* ANIMATIONS */
 

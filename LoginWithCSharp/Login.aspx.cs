@@ -13,32 +13,31 @@ namespace LoginWithCSharp
     public partial class Login : System.Web.UI.Page
     {
           
-
-        protected void Button_3_Click1(object sender, EventArgs e)
+        public void Button_3_Click1(object sender, EventArgs e)
         {
-            bool p = false;
-
+            bool d = false;
             try
             {
                 UT_1 a = new UT_1();
-                a.Logear(TextBox1.Text, TextBox2.Text);
+                a.Logear(TextBox1.Text, TextBox2.Text, ref d);
+                if(a.Logear(TextBox1.Text, TextBox2.Text, ref d))
+                {
+                    Response.Redirect("Default.aspx");
+                }
+                else
+                {
+                    Response.Redirect("Login.aspx");
+                }
                 TextBox1.Text = "";
                 TextBox2.Text = "";
                 TextBox1.Focus();
-                p = true;
             }
             catch(Exception error)
             {
                 Response.Write(error);
             }
 
-            if (p == true) {
-                Response.Redirect("Default.aspx");
-            }
-            else
-            {
-                Response.Redirect("Default.aspx");
-            }
+          
         }
     }
     }

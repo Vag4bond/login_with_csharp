@@ -16,7 +16,7 @@
     <!-- Login Form class="auto-style1" -->
     <form ID="login" runat="server"> 
         <asp:TextBox ID="TextBox1" runat="server" type="text" class="fadeIn second" name="login" placeholder="Nombre de Usuario"></asp:TextBox>
-       <asp:TextBox ID="TextBox2" runat="server" input type="text" class="fadeIn third" name="login" placeholder="Contraseña"></asp:TextBox>
+       <asp:TextBox ID="TextBox2" runat="server" class="fadeIn third" name="login" input type="password" placeholder="Contraseña"></asp:TextBox>
        <asp:Button ID="Button" name="Login" runat="server" input type="submit" class="fadeIn fourth" Text="Log In" OnClick="Button_3_Click1"></asp:Button>
     </form>
         <asp:Label runat="server" id="popup1" class="overlay">
@@ -29,9 +29,9 @@
     </div>
 </asp:Label>
 
-    <!-- Remind Passowrd -->
+    <!-- Alerts -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+      <asp:Label ID="Label_1" runat="server" class="underlineHover" href="#" Visible="False"></asp:Label>
     </div>
 
   </div>
@@ -267,12 +267,42 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
+input[type=password] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
 input[type=text]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
+input[type=password]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
 input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+input[type=password]:placeholder {
   color: #cccccc;
 }
 

@@ -13,10 +13,7 @@ namespace LoginWithCSharp
     public class UT_1
     {
 
-
-
-
-        public void Logear(string a, string b)
+        public bool Logear(string a, string b, ref bool c)
         {
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
                 con.Open();
@@ -27,6 +24,14 @@ namespace LoginWithCSharp
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader sdr = cmd.ExecuteReader();
 
+            if (sdr.Read())
+            {
+                return c = true;     
+            }
+            else
+            {
+                return c = false;     
+            }
 
             con.Close();
 
