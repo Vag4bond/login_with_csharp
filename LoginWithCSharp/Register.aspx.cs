@@ -21,7 +21,7 @@ namespace LoginWithCSharp
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO RegTable VALUES (@NombreUsuario, @PrimerNombre, @Apellidos, @Genero, @Cedula, @Ciudad, @NumTelefono, @ClaveAcceso, @Email)", con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO RegTable VALUES (@NombreUsuario, @PrimerNombre, @Apellidos, @Genero, @Email, @Ciudad, @NumTelefono, @ClaveAcceso, @Cedula)", con);
 
             cmd.Parameters.AddWithValue("NombreUsuario", txtUser.Text);
             cmd.Parameters.AddWithValue("PrimerNombre", txtFirstName.Text);

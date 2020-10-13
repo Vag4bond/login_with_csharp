@@ -16,28 +16,9 @@ namespace LoginWithCSharp
 
         protected void Button_3_Click1(object sender, EventArgs e)
         {
-            try
-            {
-                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
-                con.Open();
+            UT_1 a = new UT_1();
+            a.Logear(TextBox1.Text, TextBox2.Text);
 
-                string username = TextBox1.Text;
-                string pass = TextBox2.Text;
-
-
-
-
-                string qry = "select * from RegTable where NombreUsuario='" + username + "' and ClaveAcceso='" + pass + "'";
-                SqlCommand cmd = new SqlCommand(qry, con);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                Response.Redirect("Default.aspx");
-
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                Response.Write(ex.Message);
-            }
         }
     }
     }

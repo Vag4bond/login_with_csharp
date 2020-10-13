@@ -5,7 +5,7 @@
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
-    <h2 class="inactive underlineHover"> Sign In </h2>
+    <a href="Login.aspx"><h2 class="inactive underlineHover"> Sign In </h2></a>
     <h2 class="active">Sign Up</h2>
 
     <!-- Icon -->
@@ -23,9 +23,9 @@
         <asp:TextBox ID="txtPassword" runat="server" type="text" class="fadeIn second" name="login" placeholder="Contraseña"></asp:TextBox> 
         <asp:DropDownList placeholder="Ciudad" ID="DropDownList1" runat="server" name="login"> 
         <asp:ListItem Text="Seleccione una ciudad" Value="select" Selected="True"></asp:ListItem>  
-        <asp:ListItem Text="Santo Domingo" Value="SantoDomingo"></asp:ListItem>  
+        <asp:ListItem Text="Santo Domingo" Value="Santo Domingo"></asp:ListItem>  
         <asp:ListItem Text="Santiago" Value="Santiago"></asp:ListItem>  
-        <asp:ListItem Text="San Cristóbal" Value="SanCristobal"></asp:ListItem>  
+        <asp:ListItem Text="San Cristóbal" Value="San Cristobal"></asp:ListItem>  
         </asp:DropDownList>  
         <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="radioButtonList"  RepeatDirection="Horizontal" TextAlign="Right" Style="list-style=center" align="center">  
                <asp:ListItem>Masculino</asp:ListItem>  
