@@ -19,21 +19,8 @@ namespace LoginWithCSharp
 
         protected void Button_1_Click1(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO RegTable VALUES (@NombreUsuario, @PrimerNombre, @Apellidos, @Genero, @Email, @Ciudad, @NumTelefono, @ClaveAcceso, @Cedula)", con);
-
-            cmd.Parameters.AddWithValue("NombreUsuario", txtUser.Text);
-            cmd.Parameters.AddWithValue("PrimerNombre", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("Apellidos", txtLastName.Text);
-            cmd.Parameters.AddWithValue("Genero", Convert.ToString(RadioButtonList1.SelectedValue));
-            cmd.Parameters.AddWithValue("Cedula", txtCedula.Text);
-            cmd.Parameters.AddWithValue("Ciudad", Convert.ToString(DropDownList1.SelectedValue));
-            cmd.Parameters.AddWithValue("NumTelefono", txtMobileNumber.Text);
-            cmd.Parameters.AddWithValue("ClaveAcceso", txtPassword.Text);
-            cmd.Parameters.AddWithValue("Email", txtEmail.Text);
-            cmd.ExecuteNonQuery();
-
+            UT_2 a = new UT_2();
+            a.Registrar(txtUser.Text, txtFirstName.Text, txtLastName.Text, Convert.ToString(RadioButtonList1.SelectedValue), txtCedula.Text, Convert.ToString(DropDownList1.SelectedValue), txtMobileNumber.Text, txtPassword.Text, txtEmail.Text);
 
             txtUser.Text = "";
             txtFirstName.Text = "";
@@ -45,8 +32,6 @@ namespace LoginWithCSharp
             txtPassword.Text = "";
             txtEmail.Text = "";
             txtUser.Focus();
-
-            Response.Redirect("Login.aspx");
         }
     }
 }
