@@ -11,11 +11,13 @@ using System.Runtime.Remoting.Messaging;
 namespace LoginWithCSharp
 {
     public class UT_1
-    { 
+    {
+
+
+
+
         public void Logear(string a, string b)
         {
-            try
-            {
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
                 con.Open();
 
@@ -25,20 +27,9 @@ namespace LoginWithCSharp
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader sdr = cmd.ExecuteReader();
 
-                if (sdr.Read())
-                {
-                    HttpContext.Current.Response.Redirect("Default.aspx");
-                }
 
-                con.Close();
+            con.Close();
 
             }
-            catch (Exception ex)
-            {
-                HttpContext.Current.Response.Write(ex.Message);
-            }
-            
-
-        }
     }
     }

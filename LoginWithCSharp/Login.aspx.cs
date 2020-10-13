@@ -16,9 +16,29 @@ namespace LoginWithCSharp
 
         protected void Button_3_Click1(object sender, EventArgs e)
         {
-            UT_1 a = new UT_1();
-            a.Logear(TextBox1.Text, TextBox2.Text);
+            bool p = false;
 
+            try
+            {
+                UT_1 a = new UT_1();
+                a.Logear(TextBox1.Text, TextBox2.Text);
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox1.Focus();
+                p = true;
+            }
+            catch(Exception error)
+            {
+                Response.Write(error);
+            }
+
+            if (p == true) {
+                Response.Redirect("Default.aspx");
+            }
+            else
+            {
+                Response.Redirect("Default.aspx");
+            }
         }
     }
     }

@@ -19,19 +19,39 @@ namespace LoginWithCSharp
 
         protected void Button_1_Click1(object sender, EventArgs e)
         {
-            UT_2 a = new UT_2();
-            a.Registrar(txtUser.Text, txtFirstName.Text, txtLastName.Text, Convert.ToString(RadioButtonList1.SelectedValue), txtCedula.Text, Convert.ToString(DropDownList1.SelectedValue), txtMobileNumber.Text, txtPassword.Text, txtEmail.Text);
+            bool i = false;
 
-            txtUser.Text = "";
-            txtFirstName.Text = "";
-            txtLastName.Text = "";
-            DropDownList1.SelectedValue = "";
-            RadioButtonList1.SelectedValue = "";
-            txtCedula.Text = "";
-            txtMobileNumber.Text = "";
-            txtPassword.Text = "";
-            txtEmail.Text = "";
-            txtUser.Focus();
+            try
+            {
+                UT_2 a = new UT_2();
+                a.Registrar(txtUser.Text, txtFirstName.Text, txtLastName.Text, Convert.ToString(RadioButtonList1.SelectedValue), txtCedula.Text, Convert.ToString(DropDownList1.SelectedValue), txtMobileNumber.Text, txtPassword.Text, txtEmail.Text);
+
+                txtUser.Text = "";
+                txtFirstName.Text = "";
+                txtLastName.Text = "";
+                DropDownList1.SelectedValue = "";
+                RadioButtonList1.SelectedValue = "";
+                txtCedula.Text = "";
+                txtMobileNumber.Text = "";
+                txtPassword.Text = "";
+                txtEmail.Text = "";
+                txtUser.Focus();
+
+                i = true;
+
+            }
+            catch(Exception errorr)
+            {
+                Response.Write(errorr);
+            }
+            if (i == true)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Response.Redirect("Register.aspx");
+            }
         }
     }
 }

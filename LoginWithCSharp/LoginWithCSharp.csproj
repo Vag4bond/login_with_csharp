@@ -67,9 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\RegDatabase.mdf" />
+    <Content Include="App_Data\RegDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\RegDatabase_log.ldf">
       <DependentUpon>RegDatabase.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />

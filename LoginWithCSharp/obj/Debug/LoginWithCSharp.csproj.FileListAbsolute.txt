@@ -57,3 +57,5 @@ C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\obj\Debug\Log
 C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\obj\Debug\LoginWithCSharp.csproj.CopyComplete
 C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\obj\Debug\LoginWithCSharp.dll
 C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\obj\Debug\LoginWithCSharp.pdb
+C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\bin\App_Data\RegDatabase.mdf
+C:\Users\user\Documents\Projects\INTEC\LoginWithC#\LoginWithCSharp\bin\App_Data\RegDatabase_log.ldf

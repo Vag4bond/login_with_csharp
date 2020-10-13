@@ -9,11 +9,10 @@ namespace LoginWithCSharp
 {
     public class UT_2
     {
-        public void Registrar(string usuario, string nombre, string apellido, string genero, string cedula, string ciudad, string telefono, string clave, string email)
+
+        public void Registrar(string usuario, string nombre, string apellido, string genero, string email, string ciudad, string telefono, string clave, string cedula)
         {
 
-            try
-            {
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO RegTable VALUES (@NombreUsuario, @PrimerNombre, @Apellidos, @Genero, @Email, @Ciudad, @NumTelefono, @ClaveAcceso, @Cedula)", con);
@@ -29,19 +28,9 @@ namespace LoginWithCSharp
                 cmd.Parameters.AddWithValue("Email", email);
                 cmd.ExecuteNonQuery();
 
-
-
                 con.Close();
 
-                HttpContext.Current.Response.Redirect("Login.aspx");
-            }
-            catch (Exception e)
-            {
-                HttpContext.Current.Response.Write(e.Message);
-
-            }
-
-
+                //HttpContext.Current.Response.Redirect("Login.aspx");
         }
     }
 }
